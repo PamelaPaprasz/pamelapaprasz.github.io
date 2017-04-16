@@ -6,3 +6,8 @@
 
 words = ["What", "I", "do", "create,", "I", "cannot", "not", "understand."]
 
+words[2] = 'cannot'
+words[5] = 'do'
+
+str_words = ' '.join(words)
+print(str_words)
