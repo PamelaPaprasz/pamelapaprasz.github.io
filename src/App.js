@@ -5,16 +5,18 @@ import Home from './pages/Home';
 import Fun from './pages/Fun';
 import About from './pages/About';
 import Work from './pages/Work';
+import Project from './pages/Project';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/fun" element={<Fun />} />
         <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
+        <Route path="/work" exact element={<Work />} />
+        <Route path="/work/:projectId" element={<Project />} />
       </Routes>
     </Router>
   );
