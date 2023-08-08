@@ -53,7 +53,7 @@ function Project() {
             showSidebar ? 'fade-in' : 'fade-out'
           }`} >
         {showSidebar && (
-          <ul className={`p-4 space-y-2 md:space-y-4 fixed top-0`} style={{
+          <ul className={`p-4 space-y-2 md:space-y-4 fixed top-0 hidden md:block`} style={{
             top: `${sidebarTop}px`}}>
             {project.sections.map((section) => (
               <li className={`${activeSection === section.id ? 'bg-blue-200' : ''}`} key={section.id}>
