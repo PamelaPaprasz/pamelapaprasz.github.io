@@ -63,12 +63,21 @@ function Navbar() {
           </Link>
           <Link
             to="/fun"
-            className={`block mt-4 md:inline-block md:mt-0 hover:text-blue-400 ${
+            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 hover:text-blue-400 ${
               location.pathname === '/fun' ? 'text-blue-400' : ''
             }`}
             onClick={closeNav}
           >
             Fun
+          </Link>
+          <Link
+            to="/contact"
+            className={`block mt-4 md:inline-block md:mt-0 hover:text-blue-400 ${
+              location.pathname === '/contact' ? 'text-blue-400' : ''
+            }`}
+            onClick={closeNav}
+          >
+            Contact
           </Link>
         </div>
       </div>
@@ -104,6 +113,15 @@ function Navbar() {
             onClick={closeNav}
           >
             Fun
+          </Link>
+          <Link
+            to="/contact"
+            className={`block mt-4 hover:text-blue-400 ${
+              location.pathname === '/contact' ? 'text-blue-400' : ''
+            }`}
+            onClick={closeNav}
+          >
+            Contact
           </Link>
         </div>
       {/* )} */}
