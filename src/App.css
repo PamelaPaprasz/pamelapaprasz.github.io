@@ -35,7 +35,7 @@
   transition: opacity 1s ease-in-out;
 }
 
-/* Mobile menu slide-in and fade-in animation */
+/* Mobile menu slide-in animation */
 @keyframes growDown {
   0% {
     transform: scaleY(0)
@@ -46,7 +46,7 @@
 }
 
 
-/* Mobile menu slide-out and fade-out animation */
+/* Mobile menu slide-out animation */
 @keyframes growUp {
   0% {
     transform: scaleY(1)
