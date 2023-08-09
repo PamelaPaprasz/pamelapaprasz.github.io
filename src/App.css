@@ -35,4 +35,40 @@
   transition: opacity 1s ease-in-out;
 }
 
+/* Mobile menu slide-in and fade-in animation */
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+}
+100% {
+    transform: scaleY(1)
+}
+}
+
+
+/* Mobile menu slide-out and fade-out animation */
+@keyframes growUp {
+  0% {
+    transform: scaleY(1)
+}
+100% {
+    transform: scaleY(0)
+}
+}
+
+/* Apply the animation to the mobile menu */
+.mobile-menu {
+  animation: growDown 400ms ease-in-out forwards;
+  transform-origin: top center
+}
+
+/* Apply the slide-in and fade-in animation when opening */
+.mobile-menu.open {
+  animation-name: growDown;
+}
+
+/* Apply the slide-out and fade-out animation when closing */
+.mobile-menu.close {
+  animation-name: growUp;
+}
 

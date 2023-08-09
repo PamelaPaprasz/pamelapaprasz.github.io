@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './pages/Home';
 import Fun from './pages/Fun';
-import About from './pages/About';
 import Work from './pages/Work';
 import Project from './pages/Project';
 
@@ -14,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/fun" element={<Fun />} />
-        <Route path="/about" element={<About />} />
         <Route path="/work" exact element={<Work />} />
         <Route path="/work/:projectId" element={<Project />} />
       </Routes>
