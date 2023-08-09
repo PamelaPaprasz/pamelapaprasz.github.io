@@ -1,6 +1,7 @@
 import React , { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../App.css';
+import PageContainer from '../elements/PageContainer';
 import { projects } from '../data/projectsData'; // Import your projects data here
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -47,6 +48,7 @@ function Project() {
   }, [project.sections]);
   
     return (
+      <PageContainer>
       <div className="flex flex-col md:flex-row">
         
         <nav className={`md:w-1/6 ${
@@ -87,6 +89,7 @@ function Project() {
           ))}
         </div>
       </div>
+      </PageContainer>
     );
 }
 

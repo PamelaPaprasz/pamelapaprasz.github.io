@@ -1,11 +1,12 @@
 import React from 'react';
+import PageContainer from '../elements/PageContainer';
 
 function Home() {
   return (
-    <div>
+    <PageContainer>
       <h1>Home Page</h1>
       <p>Welcome to my personal page.</p>
-    </div>
+    </PageContainer>
   );
 }
 
