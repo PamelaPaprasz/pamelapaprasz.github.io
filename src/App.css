@@ -72,3 +72,7 @@
   animation-name: growUp;
 }
 
+
+.hero-bg {
+  background-image: url('../public/assets/profile_left.png'); 
+}
