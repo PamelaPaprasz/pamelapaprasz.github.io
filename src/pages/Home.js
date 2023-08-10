@@ -5,8 +5,8 @@ import HeroSection from '../elements/HeroSection';
 function Home() {
   return (
     <div>
-      <HeroSection />
     <PageContainer>
+      <HeroSection />
       <p>Welcome to the Home page.</p>
     </PageContainer>
     </div>

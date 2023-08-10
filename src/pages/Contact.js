@@ -25,12 +25,12 @@ function Contact() {
   return (
     <div className={`bg-left-top bg-contain bg-right h-screen hero-bg bg-no-repeat ${isMobileScreen? 'bg-none': ''}`}>
     <PageContainer>
-      <p className="text-left text-7xl mt-20 font-bold leading-[8.5rem]">
+      <p className="text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">
         <a href="mailto:your.email@example.com" className="text-blue-500">email</a>
         {' '}me or say hello
         <br/>
       </p>
-      <p className="text-left text-7xl mb-4 font-bold leading-[8.5rem]">
+      <p className="text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
          on{' '}
         <a
           href="https://www.linkedin.com/in/paprasz" // Update with your LinkedIn profile URL
@@ -43,7 +43,7 @@ function Contact() {
       </p>
       <br/>
       <br/>
-      <p className="text-left text-7xl mb-4 font-bold leading-[8.5rem]">
+      <p className="text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
         also sneak a peek on my{' '}
         <br/>
         <a
