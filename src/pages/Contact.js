@@ -25,32 +25,44 @@ function Contact() {
   return (
     <div className={`bg-left-top bg-contain bg-right h-screen hero-bg bg-no-repeat ${isMobileScreen? 'bg-none': ''}`}>
     <PageContainer>
-      <p className="text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">
-        <a href="mailto:your.email@example.com" className="text-blue-500">email</a>
+      <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">
+        <a href="mailto:your.email@example.com" className="text-ferrariRed"
+          style={{
+            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+          }}
+          >email</a>
         {' '}me or say hello
         <br/>
       </p>
-      <p className="text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
+      <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
          on{' '}
         <a
           href="https://www.linkedin.com/in/paprasz" // Update with your LinkedIn profile URL
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500"
+          // className="bg-ferrariRed text-champagneBeige hover:text-superLightBeige"
+          className="text-evenMorePaleBeige hover:text-ferrariRed"
+          style={{
+            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+          }}
         >
           LinkedIn
         </a>
       </p>
       <br/>
       <br/>
-      <p className="text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
+      <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mb-2 md:mb-4 font-bold leading-[2.5rem] md:leading-[8.5rem]">
         also sneak a peek on my{' '}
         <br/>
         <a
           href="/assets/cv.pdf" // Update the path to your CV
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500"
+          // className="text-evenMorePaleBeige hover:text-ferrariRed"
+          className="text-evenMorePaleBeige hover:text-ferrariRed"
+          style={{
+            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+          }}
         >
           CV
         </a>{' '}and{' '}
@@ -58,7 +70,12 @@ function Contact() {
           href="https://github.com/pamelapaprasz" // Update with your GitHub profile URL
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500"
+          // className="bg-ferrariRed text-champagneBeige hover:text-superLightBeige"
+          className="text-ferrariRed"
+          style={{
+            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+          }}
+          
         >
           GitHub
         </a>

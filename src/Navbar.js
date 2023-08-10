@@ -15,15 +15,19 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-900 text-white">
+    <nav className="bg-ferrariRed text-champagneBeige">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
-          Pamela Paprasz
+        <img
+            src="/assets/logo_beige.png"
+            alt="Pamela Paprasz Logo"
+            className="w-10 h-10 mr-2"
+          />
         </Link>
         <div className="md:hidden">
           <button
             onClick={toggleNav}
-            className="text-white focus:outline-none"
+            className="text-evenMorePaleBeige focus:outline-none"
             aria-label="Toggle navigation"
           >
             <svg
@@ -54,36 +58,36 @@ function Navbar() {
         <div className={`md:flex hidden`}>
           <Link
             to="/work"
-            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 hover:text-blue-400 ${
-              location.pathname === '/work' ? 'text-blue-400' : ''
+            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 ${
+              location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Work
+            work
           </Link>
           <Link
             to="/fun"
-            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 hover:text-blue-400 ${
-              location.pathname === '/fun' ? 'text-blue-400' : ''
+            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 ${
+              location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Fun
+            fun
           </Link>
           <Link
             to="/contact"
-            className={`block mt-4 md:inline-block md:mt-0 hover:text-blue-400 ${
-              location.pathname === '/contact' ? 'text-blue-400' : ''
+            className={`block mt-4 md:inline-block md:mt-0 ${
+              location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Contact
+            contact
           </Link>
         </div>
       </div>
       {/* {open && ( */}
         <div
-        className={`md:hidden bg-gray-900 text-white mobile-menu ${
+        className={`md:hidden bg-ferrariRed text-champagneBeige mobile-menu ${
           open ? 'open' : 'close'
         }`}
           style={{
@@ -98,30 +102,30 @@ function Navbar() {
         >
           <Link
             to="/work"
-            className={`block mt-4 hover:text-blue-400 ${
-              location.pathname === '/work' ? 'text-blue-400' : ''
+            className={`block mt-4 ${
+              location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Work
+            work
           </Link>
           <Link
             to="/fun"
-            className={`block mt-4 hover:text-blue-400 ${
-              location.pathname === '/fun' ? 'text-blue-400' : ''
+            className={`block mt-4 ${
+              location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Fun
+            fun
           </Link>
           <Link
             to="/contact"
-            className={`block mt-4 hover:text-blue-400 ${
-              location.pathname === '/contact' ? 'text-blue-400' : ''
+            className={`block mt-4 ${
+              location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
           >
-            Contact
+            contact
           </Link>
         </div>
       {/* )} */}
