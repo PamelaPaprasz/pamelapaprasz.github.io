@@ -1,10 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './App.css';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation(); // Get the current location
+
+  const [isSticky, setIsSticky] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    if (currentScrollPos > prevScrollPos) {
+      setIsSticky(false);
+    } else {
+      setIsSticky(true);
+    }
+    
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const toggleNav = () => {
     setOpen(!open);
@@ -15,13 +37,13 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-ferrariRed text-champagneBeige">
+    <nav className={`bg-ferrariRed text-champagneBeige shadow-lg fixed w-full z-50 transition-transform transform ${isSticky ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
         <img
-            src="/assets/logo_beige.png"
+            src="/assets/logo.png"
             alt="Pamela Paprasz Logo"
-            className="w-10 h-10 mr-2"
+            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110"
           />
         </Link>
         <div className="md:hidden">

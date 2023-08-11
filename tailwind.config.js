@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ferrariRed: '#FF2800',
-        champagneBeige: '#F7E7CE',
+        ferrariRed: '#FF2800', // for acent color
+        champagneBeige: '#F7E7CE', // this is the color of the logo
         superLightBeige: '#FEFCFA',
-        evenMorePaleBeige: '#FEFEFC',
-        darkBeige: '#6A5D4B',
-        extraDarkBeige: '#3E3526'
+        evenMorePaleBeige: '#FEFEFC', // for background
+        darkBeige: '#6A5D4B', // for smaller text
+        extraDarkBeige: '#3E3526' // for heading
       }
     },
   },
