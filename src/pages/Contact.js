@@ -25,10 +25,11 @@ function Contact() {
   return (
     <div className={`bg-left-top bg-contain bg-right h-screen hero-bg bg-no-repeat ${isMobileScreen? 'bg-none': ''}`}>
     <PageContainer>
+      <div className='mt-20'>
       <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">
-        <a href="mailto:your.email@example.com" className="text-ferrariRed"
+        <a href="mailto:your.email@example.com" className="text-evenMorePaleBeige hover:text-extraDarkBeige"
           style={{
-            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+            textShadow: '-1px -1px 0 #3E3526, 1px -1px 0 #3E3526, -1px 1px 0 #3E3526, 1px 1px 0 #3E3526',
           }}
           >email</a>
         {' '}me or say hello
@@ -71,15 +72,16 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
           // className="bg-ferrariRed text-champagneBeige hover:text-superLightBeige"
-          className="text-ferrariRed"
+          className="text-evenMorePaleBeige hover:text-extraDarkBeige"
           style={{
-            textShadow: '-1px -1px 0 #FF2800, 1px -1px 0 #FF2800, -1px 1px 0 #FF2800, 1px 1px 0 #FF2800',
+            textShadow: '-1px -1px 0 #3E3526, 1px -1px 0 #3E3526, -1px 1px 0 #3E3526, 1px 1px 0 #3E3526',
           }}
           
         >
           GitHub
         </a>
       </p>
+      </div>
     </PageContainer>
     </div>
   );

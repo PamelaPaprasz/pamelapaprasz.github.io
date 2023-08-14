@@ -4,12 +4,12 @@ import HeroSection from '../elements/HeroSection';
 
 function Home() {
   return (
-    <div>
     <PageContainer>
+      <div className='mt-20'>
       <HeroSection />
       <p>Welcome to the Home page.</p>
-    </PageContainer>
     </div>
+    </PageContainer>
   );
 }
 

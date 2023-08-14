@@ -6,16 +6,16 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation(); // Get the current location
 
-  const [isSticky, setIsSticky] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos > prevScrollPos) {
-      setIsSticky(false);
+    if (currentScrollPos < prevScrollPos) {
+      setIsHidden(false);
     } else {
-      setIsSticky(true);
+      setIsHidden(true);
     }
     
     setPrevScrollPos(currentScrollPos);
@@ -37,10 +37,10 @@ function Navbar() {
   };
 
   return (
-    <nav className={`bg-ferrariRed text-champagneBeige shadow-lg fixed w-full z-50 transition-transform transform ${isSticky ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <nav className={`bg-ferrariRed text-champagneBeige shadow-lg fixed w-full z-50 transition-transform transform ${!open && isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
+      <div className="container mx-auto flex justify-between items-center p-4 relative">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
-        <img
+          <img
             src="/assets/logo.png"
             alt="Pamela Paprasz Logo"
             className="w-10 h-10 mr-2 transition-transform transform hover:scale-110"
@@ -77,10 +77,10 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        <div className={`md:flex hidden`}>
+        <div className={`md:flex top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50' : 'hidden'}`}>
           <Link
             to="/work"
-            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 ${
+            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 ${
               location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
@@ -89,7 +89,7 @@ function Navbar() {
           </Link>
           <Link
             to="/fun"
-            className={`block mt-4 md:inline-block md:mt-0 md:mr-6 ${
+            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 ${
               location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
@@ -98,7 +98,7 @@ function Navbar() {
           </Link>
           <Link
             to="/contact"
-            className={`block mt-4 md:inline-block md:mt-0 ${
+            className={`block mt-4 md:mt-0 md:ml-0 ml-4 ${
               location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
             }`}
             onClick={closeNav}
@@ -107,50 +107,6 @@ function Navbar() {
           </Link>
         </div>
       </div>
-      {/* {open && ( */}
-        <div
-        className={`md:hidden bg-ferrariRed text-champagneBeige mobile-menu ${
-          open ? 'open' : 'close'
-        }`}
-          style={{
-            position: 'fixed',
-            top: '64px',
-            left: 0,
-            bottom: 0,
-            width: '100%',
-            padding: '20px',
-            zIndex: 100, // Higher value to cover content
-          }}
-        >
-          <Link
-            to="/work"
-            className={`block mt-4 ${
-              location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
-            }`}
-            onClick={closeNav}
-          >
-            work
-          </Link>
-          <Link
-            to="/fun"
-            className={`block mt-4 ${
-              location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
-            }`}
-            onClick={closeNav}
-          >
-            fun
-          </Link>
-          <Link
-            to="/contact"
-            className={`block mt-4 ${
-              location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
-            }`}
-            onClick={closeNav}
-          >
-            contact
-          </Link>
-        </div>
-      {/* )} */}
     </nav>
   );
 }

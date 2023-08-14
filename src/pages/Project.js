@@ -49,7 +49,7 @@ function Project() {
   
     return (
       <PageContainer>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row mt-20">
         
         <nav className={`md:w-1/6 ${
             showSidebar ? 'fade-in' : 'fade-out'
