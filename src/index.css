@@ -8,6 +8,7 @@ body {
   font-family: 'roboto', monospace;
   color: #333333;
   background-color: #FEFEFC;
+  overscroll-behavior: none;
 }
 
 
