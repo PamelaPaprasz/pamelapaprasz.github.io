@@ -1,4 +1,4 @@
-import React , { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../App.css';
 import PageContainer from '../elements/PageContainer';
@@ -6,16 +6,16 @@ import { projects } from '../data/projectsData'; // Import your projects data he
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Project() {
-    const { projectId } = useParams();
-    const project = projects.find((p) => p.id === parseInt(projectId));
-  
-    if (!project) {
-      return <div>Project not found</div>;
-    }
+  const { projectId } = useParams();
+  const project = projects.find((p) => p.id === parseInt(projectId));
 
-    const [showSidebar, setShowSidebar] = useState(false);
-    const [sidebarTop, setSidebarTop] = useState(0);
-    const [activeSection, setActiveSection] = useState(project.sections[0].id); // Initialize the active section to the first section
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [sidebarTop, setSidebarTop] = useState(0);
+  const [activeSection, setActiveSection] = useState(project.sections[0].id); // Initialize the active section to the first section
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,36 +46,36 @@ function Project() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [project.sections]);
-  
-    return (
-      <PageContainer>
+
+  return (
+    <PageContainer>
       <div className="flex flex-col md:flex-row mt-20">
-        
-        <nav className={`md:w-1/6 ${
-            showSidebar ? 'fade-in' : 'fade-out'
+
+        <nav className={`md:w-1/6 ${showSidebar ? 'fade-in' : 'fade-out'
           }`} >
-        {showSidebar && (
-          <ul className={`p-4 space-y-2 md:space-y-4 fixed top-0 hidden md:block`} style={{
-            top: `${sidebarTop}px`}}>
-            {project.sections.map((section) => (
-              <li className={`${activeSection === section.id ? 'bg-blue-200' : ''}`} key={section.id}>
-              <a
-                href={`#${section.id}`}
-                className="block p-2 hover:bg-blue-200 flex items-center"
-              >
-                <FontAwesomeIcon
-                  icon={section.icon} // Use the icon associated with the section
-                  className="mr-2 text-blue-500"
-                />
-                <span>{section.title}</span> {/* Place the text after the icon */}
-              </a>
-            </li>
-            ))}
-          </ul>
+          {showSidebar && (
+            <ul className={`p-4 space-y-2 md:space-y-4 fixed top-0 hidden md:block`} style={{
+              top: `${sidebarTop}px`
+            }}>
+              {project.sections.map((section) => (
+                <li className={`${activeSection === section.id ? 'bg-blue-200' : ''}`} key={section.id}>
+                  <a
+                    href={`#${section.id}`}
+                    className="block p-2 hover:bg-blue-200 flex items-center"
+                  >
+                    <FontAwesomeIcon
+                      icon={section.icon} // Use the icon associated with the section
+                      className="mr-2 text-blue-500"
+                    />
+                    <span>{section.title}</span> {/* Place the text after the icon */}
+                  </a>
+                </li>
+              ))}
+            </ul>
           )}
-          
+
         </nav>
-      
+
         {/* Main Content */}
         <div className="flex-1 p-4 md:p-8">
           <h1 className="text-3xl font-semibold mb-4">{project.title}</h1>
@@ -89,8 +89,8 @@ function Project() {
           ))}
         </div>
       </div>
-      </PageContainer>
-    );
+    </PageContainer>
+  );
 }
 
 export default Project;

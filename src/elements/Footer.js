@@ -9,7 +9,7 @@ function Footer() {
       </div>
       <div className="w-full mx-auto flex justify-end items-right">
         <a href="mailto:your.email@example.com" className="mr-4">
-            <AiOutlineMail size={24} />
+          <AiOutlineMail size={24} />
         </a>
         <a
           href="https://www.linkedin.com/in/paprasz" // Update with your LinkedIn profile URL

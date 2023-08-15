@@ -14,10 +14,11 @@
 @keyframes growDown {
   0% {
     transform: scaleY(0)
-}
-100% {
+  }
+
+  100% {
     transform: scaleY(1)
-}
+  }
 }
 
 
@@ -25,10 +26,11 @@
 @keyframes growUp {
   0% {
     transform: scaleY(1)
-}
-100% {
+  }
+
+  100% {
     transform: scaleY(0)
-}
+  }
 }
 
 /* Apply the animation to the mobile menu */
@@ -49,10 +51,9 @@
 
 
 .hero-bg {
-  background-image: url('../public/assets/profile_left.png'); 
+  background-image: url('../public/assets/profile_left.png');
 }
 
 .disable-scroll {
   overflow: hidden;
 }
-

@@ -5,8 +5,8 @@ function Fun() {
   return (
     <PageContainer>
       <div className='mt-20'>
-      <h1>Fun Page</h1>
-      <p>Welcome to the what I have learnt section.</p>
+        <h1>Fun Page</h1>
+        <p>Welcome to the what I have learnt section.</p>
       </div>
     </PageContainer>
   );
