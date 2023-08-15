@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTopOnNavigation from './ScrollToTopOnNavigation';
 import Navbar from './Navbar';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -11,6 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTopOnNavigation />
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/work" exact element={<Work />} />
