@@ -12,10 +12,12 @@ function Navbar() {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos < prevScrollPos) {
-      setIsHidden(false);
+    if (currentScrollPos <= 300) {
+      setIsHidden(false); // Show navigation when at the top of the page + 300px
+    } else if (currentScrollPos < prevScrollPos) {
+      setIsHidden(false); // Show navigation when scrolling up
     } else {
-      setIsHidden(true);
+      setIsHidden(true); // Hide navigation when scrolling down
     }
     
     setPrevScrollPos(currentScrollPos);
