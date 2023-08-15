@@ -40,6 +40,20 @@ function Navbar() {
     setOpen(false);
   };
 
+  useEffect(() => {
+    // Toggle the "disable-scroll" class on the body element
+    if (open) {
+      document.body.classList.add('disable-scroll');
+    } else {
+      document.body.classList.remove('disable-scroll');
+    }
+
+    // Cleanup by removing the class when the component unmounts
+    return () => {
+      document.body.classList.remove('disable-scroll');
+    };
+  }, [open]);
+
   return (
     <nav className={`bg-ferrariRed text-champagneBeige shadow-lg fixed w-full z-50 transition-transform transform ${!open && isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="container mx-auto flex justify-between items-center p-4 relative">
