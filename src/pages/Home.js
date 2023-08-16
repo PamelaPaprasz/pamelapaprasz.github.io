@@ -14,11 +14,7 @@ function Home() {
           <HeroSection />
         </div>
       </PageContainer>
-
-      <div className="relative w-screen h-24 z-100">
-        <WaveSection />
-      </div>
-
+      <WaveSection />
       <div className='relative'>
         <div className="absolute inset-0 bg-ferrariRed bg-opacity-10 z-0 mx-auto" />
         <PageContainer>
