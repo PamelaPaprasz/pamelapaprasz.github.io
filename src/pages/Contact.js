@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import PageContainer from '../elements/PageContainer';
+import BigWaves from '../elements/BigWaves';
 
 function Contact() {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
@@ -24,6 +25,7 @@ function Contact() {
 
   return (
     <div className={`bg-left-top bg-contain bg-right h-screen hero-bg bg-no-repeat ${isMobileScreen ? 'bg-none' : ''}`}>
+      <BigWaves />
       <PageContainer>
         <div className='mt-20'>
           <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">

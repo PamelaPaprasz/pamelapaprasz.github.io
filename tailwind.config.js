@@ -12,7 +12,8 @@ module.exports = {
         evenMorePaleBeige: '#FEFEFC', // for background
         darkBeige: '#6A5D4B', // for smaller text
         extraDarkBeige: '#3E3526', // for heading
-        royalBlue: '#00205B'
+        royalBlue: '#00205B',
+        lightBlue: '#0099ff'
       }
     },
   },
