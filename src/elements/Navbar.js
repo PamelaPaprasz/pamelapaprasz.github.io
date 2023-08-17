@@ -59,9 +59,9 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center p-4 relative">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
           <img
-            src="/assets/logo.png"
+            src="/assets/submarine.svg"
             alt="Pamela Paprasz Logo"
-            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 shadow-md hover:shadow-lg"
+            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 shadow-md hover:shadow-lg scale-x-[-1]"
           />
         </Link>
         <div className="md:hidden">
