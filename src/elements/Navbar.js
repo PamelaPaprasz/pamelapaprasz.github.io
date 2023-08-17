@@ -55,7 +55,7 @@ function Navbar() {
   }, [open]);
 
   return (
-    <nav className={`bg-ferrariRed text-champagneBeige shadow-lg fixed w-full z-50 transition-transform transform ${!open && isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
+    <nav className={`bg-ferrariRed text-evenMorePaleBeige shadow-lg fixed w-full z-50 transition-transform transform ${!open && isHidden ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="container mx-auto flex justify-between items-center p-4 relative">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
           <img
@@ -98,7 +98,7 @@ function Navbar() {
         <div className={`md:flex top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50' : 'hidden'}`}>
           <Link
             to="/work"
-            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
+            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
               }`}
             onClick={closeNav}
           >
@@ -106,7 +106,7 @@ function Navbar() {
           </Link>
           <Link
             to="/fun"
-            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
+            className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
               }`}
             onClick={closeNav}
           >
@@ -114,7 +114,7 @@ function Navbar() {
           </Link>
           <Link
             to="/contact"
-            className={`block mt-4 md:mt-0 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige' : 'hover:font-bold hover:text-evenMorePaleBeige'
+            className={`block mt-4 md:mt-0 md:ml-0 ml-4 text-base md:text-xl ${location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
               }`}
             onClick={closeNav}
           >
