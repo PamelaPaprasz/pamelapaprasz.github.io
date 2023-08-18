@@ -11,7 +11,7 @@ function Home() {
   return (
     <>
       <PageContainer>
-        <div className="mt-24">
+        <div className="mt-20 md:mt-24">
           <HeroSection />
         </div>
       </PageContainer>

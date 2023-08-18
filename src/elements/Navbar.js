@@ -61,7 +61,7 @@ function Navbar() {
           <img
             src="/assets/submarine.svg"
             alt="Pamela Paprasz Logo"
-            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 shadow-md hover:shadow-lg scale-x-[-1]"
+            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4)) scale-x-[-1]"
           />
         </Link>
         <div className="md:hidden">
