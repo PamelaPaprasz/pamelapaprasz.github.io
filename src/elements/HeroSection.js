@@ -24,7 +24,7 @@ function HeroSection() {
     <div className="inset-0 flex justify-center items-center">
       <div className="md:flex md:items-center">
         <div className="md:w-2/3">
-          <p className="text-[10px] lg:text-sm leading-loose  mb-4 uppercase whitespace-normal">
+          <p className="text-[8px] md:text-[10px] lg:text-sm leading-loose  mb-2 md:mb-3 lg:mb-4 uppercase whitespace-normal">
             <span className="border border-extraDarkBeige text-extraDarkBeige mr-2 px-1 py-0.5 rounded-md whitespace-no-wrap">Pamela Paprasz</span>
             <span className="border border-extraDarkBeige text-extraDarkBeige mr-2 px-1 py-0.5 rounded-md whitespace-no-wrap">Vienna</span>
             <span className="border border-extraDarkBeige text-extraDarkBeige mr-2 px-1 py-0.5 rounded-md whitespace-no-wrap">Frontend Development</span>
@@ -35,7 +35,7 @@ function HeroSection() {
           <hr className="md:w-80 h-0.5 bg-darkBeige mb-4 md:mb-7 lg:mb-9" /> {/* Separator Line */}
           <p className="text-extraDarkBeige text-lg md:text-2xl lg:text-4xl mb-4 italic">Pamela Paprasz, Vienna based designer, crafting awesome apps and tools for folks like you.</p>
         </div>
-        <div className="absolute right-8 bottom-36 lg:bottom-6 hidden md:block float-right w-1/4 ml-0 md:ml-12 md:w-1/3 mt-4 md:mt-10">
+        <div className="absolute right-8 md:bottom-36 lg:bottom-6 block float-right w-1/4 ml-0 md:ml-12 md:w-1/3 mt-4 md:mt-10">
           <img
             src="/assets/submarine.svg"
             alt="Hero Image"

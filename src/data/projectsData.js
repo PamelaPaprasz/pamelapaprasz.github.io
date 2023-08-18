@@ -3,9 +3,11 @@ import { faCode, faDatabase, faChartBar } from '@fortawesome/free-solid-svg-icon
 export const projects = [
   {
     id: 1,
-    title: 'Project 1',
-    description: 'Description of Project 1.',
-    link: '/project1',
+    title: 'ChatLingo',
+    description: 'where real conversations become your classroom.',
+    link: '/chatLingo',
+    imageUrl: '/assets/chatapp.svg',
+    backgroundImagePosition: 'center',
     sections: [
       { id: 'section-1', icon: faCode, title: 'Section 1', content: 'Content for Section 1' },
       { id: 'section-2', icon: faDatabase, title: 'Section 2', content: 'Content for Section 2' },
@@ -14,11 +16,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Project 2',
-    description: 'Description of Project 2.',
-    link: '/project2',
+    title: 'Nails360',
+    description: 'where innovation meets beauty at your fingertips',
+    link: '/nails360',
+    imageUrl: '/assets/nailapp.png',
+    backgroundImagePosition: 'center',
     sections: [
-      { id: 'section-1', icon: faDatabase, title: 'Section 1', content: 'Content for Section 1' },
+      { id: 'section-1', icon: faDatabase, title: 'The app', content: 'Experience nail care like never before with Nails360 – your personalized nail shaping companion. Our cutting-edge mobile app combines advanced 3D scanning technology with artistic precision, enabling you to scan your nails effortlessly and create perfectly fitting, customized forms for 3D printing. Discover a new realm of nail artistry with Nails360, where innovation meets beauty at your fingertips.' },
       { id: 'section-2', icon: faDatabase, title: 'Section 2', content: 'Content for Section 2' },
       // Add more sections as needed
     ],
