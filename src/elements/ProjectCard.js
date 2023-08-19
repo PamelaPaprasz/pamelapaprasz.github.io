@@ -64,7 +64,7 @@ function ProjectCard({ project }) {
           }}>
               {/* Title */}
               <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-extraDarkBeige ml-0 md:ml-8 mb-3">{project.title}</h2>
-              <hr className={`md:ml-8 w-80 md:w-2/5 h-0.5 bg-superLightBeige mb-4 ${project.arrowColor === "light" ? "bg-superLightBeige " : "bg-lightGrey"}`} /> {/* Separator Line */}
+              <hr className={`md:ml-8 w-1/2 md:w-2/5 h-0.5 bg-superLightBeige mb-4 ${project.arrowColor === "light" ? "bg-superLightBeige " : "bg-lightGrey"}`} /> {/* Separator Line */}
               
               {/* Description */}
               <p className="text-extraDarkBeige text-lg md:text-xl ml-0 md:ml-8 mb-0 md:mb-4">{project.description}</p>
@@ -72,7 +72,7 @@ function ProjectCard({ project }) {
             
               <Link
                 to={`/work/${project.id}`}
-                className={`absolute shadow-md top-4 md:top-8 right-6 md:right-12 text-md md:text-4xl font-bold ${project.arrowColor === "light" ? "text-superLightBeige border-superLightBeige" : "text-lightGrey border-lightGrey"}  border-2 md:border-4  border-solid rounded-lg`}
+                className={`absolute shadow-md top-6 md:top-12 right-6 md:right-12 text-md md:text-4xl font-bold ${project.arrowColor === "light" ? "text-superLightBeige border-superLightBeige" : "text-lightGrey border-lightGrey"}  border-2 md:border-4  border-solid rounded-lg`}
               >
                 <IoIosArrowForward className="m-2" />
               </Link>
