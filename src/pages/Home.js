@@ -24,7 +24,7 @@ function Home() {
           }} className="absolute inset-0  bg-gradient-to-b from-lightBlue via-transparent to-transparent"></div>
 
         <PageContainer>
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold mb-6 z-10 relative text-superLightBeige mt-0 md:mt-[-96px]">Projects</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-semibold mb-8 md:mb-16 z-10 relative text-superLightBeige mt-0 md:mt-[-32px]">Projects</h1>
           <div className="grid grid-cols-1">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />

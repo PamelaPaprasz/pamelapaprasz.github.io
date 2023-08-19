@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 1,
     title: 'ChatLingo',
-    description: 'where real conversations become your classroom.',
+    description: 'Where real conversations become your classroom.',
     link: '/chatLingo',
     imageUrl: '/assets/cartoon.png',
     backgroundImagePosition: 'center',
@@ -17,7 +17,7 @@ export const projects = [
   {
     id: 2,
     title: 'SpendLess ImpactMore',
-    description: 'An innovative plugin that empowers you to make every purchase count.',
+    description: 'The plugin that empowers you to make every purchase count.',
     link: '/spendLessimpactMore',
     imageUrl: '/assets/spendless.png',
     backgroundImagePosition: 'center',
@@ -31,7 +31,7 @@ export const projects = [
   {
     id: 3,
     title: 'Nails360',
-    description: 'where innovation meets beauty at your fingertips',
+    description: 'Where innovation meets beauty at your fingertips.',
     link: '/nails360',
     imageUrl: '/assets/nailapp.png',
     backgroundImagePosition: 'center',
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Smart Cook Book',
+    title: 'The Smart Cook Book',
     description: 'Your one-stop solution for efficient meal planning and cost-effective shopping.',
     link: '/smartcookbook',
     imageUrl: '/assets/girl.jpg',
@@ -58,7 +58,7 @@ export const projects = [
   {
     id: 5,
     title: 'Nosh Nanny',
-    description: 'always ready to alert you to potential allergens or ingredients you prefer to avoid',
+    description: 'Always ready to alert you to ingredients you prefer to avoid.',
     link: '/noshnanny',
     imageUrl: '/assets/creativity.jpg',
     backgroundImagePosition: 'center',

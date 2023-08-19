@@ -5,6 +5,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        wave: 'wave 7s ease-in-out 1',
+      },
+      keyframes: {
+        wave: {
+          '0%, 100%': {
+            transform: 'translateY(0) translateX(0) rotate(0deg)',
+          },
+          '25%, 75%': {
+            transform: 'translateY(-1px) translateX(3px) rotate(1deg)',
+          },
+          '50%': {
+            transform: 'translateY(1px) translateX(-3px) rotate(-1deg)',
+          },
+        },
+      },
       colors: {
         ferrariRed: '#FF2800', // for acent color
         champagneBeige: '#F7E7CE', // this is the color of the logo
