@@ -6,7 +6,7 @@ export const projects = [
     title: 'ChatLingo',
     description: 'where real conversations become your classroom.',
     link: '/chatLingo',
-    imageUrl: '/assets/chatapp.svg',
+    imageUrl: '/assets/cartoon.png',
     backgroundImagePosition: 'center',
     sections: [
       { id: 'section-1', icon: faCode, title: 'Section 1', content: 'Content for Section 1' },
@@ -16,6 +16,20 @@ export const projects = [
   },
   {
     id: 2,
+    title: 'SpendLess ImpactMore',
+    description: 'An innovative plugin that empowers you to make every purchase count.',
+    link: '/spendLessimpactMore',
+    imageUrl: '/assets/spendless.png',
+    backgroundImagePosition: 'center',
+    arrowColor: 'light',
+    sections: [
+      { id: 'section-1', title: 'Section 1', content: 'Content for Section 1' },
+      { id: 'section-2', title: 'Section 2', content: 'Content for Section 2' },
+      // Add more sections as needed
+    ],
+  },
+  {
+    id: 3,
     title: 'Nails360',
     description: 'where innovation meets beauty at your fingertips',
     link: '/nails360',
@@ -28,21 +42,13 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: 'Project 3',
-    description: 'Description of Project 3.',
-    link: '/project3',
-    sections: [
-      { id: 'section-1', title: 'Section 1', content: 'Content for Section 1' },
-      { id: 'section-2', title: 'Section 2', content: 'Content for Section 2' },
-      // Add more sections as needed
-    ],
-  },
-  {
     id: 4,
-    title: 'Project 4',
-    description: 'Description of Project 4.',
-    link: '/project4',
+    title: 'Smart Cook Book',
+    description: 'Your one-stop solution for efficient meal planning and cost-effective shopping.',
+    link: '/smartcookbook',
+    imageUrl: '/assets/girl.jpg',
+    backgroundImagePosition: 'bottom',
+    arrowColor: 'light',
     sections: [
       { id: 'section-1', title: 'Section 1', content: 'Content for Section 1' },
       { id: 'section-2', title: 'Section 2', content: 'Content for Section 2' },
@@ -51,24 +57,15 @@ export const projects = [
   },
   {
     id: 5,
-    title: 'Project 5',
-    description: 'Description of Project 5.',
-    link: '/project5',
+    title: 'Nosh Nanny',
+    description: 'always ready to alert you to potential allergens or ingredients you prefer to avoid',
+    link: '/noshnanny',
+    imageUrl: '/assets/creativity.jpg',
+    backgroundImagePosition: 'center',
     sections: [
       { id: 'section-1', icon: faDatabase, title: 'Section 1', content: 'Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1 Content for Section 1' },
       { id: 'section-2', icon: faCode, title: 'Section 2', content: 'Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2 Content for Section 2' },
       { id: 'section-3', icon: faChartBar, title: 'Section 3', content: 'Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3 Content for Section 3' },
-      // Add more sections as needed
-    ],
-  },
-  {
-    id: 6,
-    title: 'Project 6',
-    description: 'Description of Project 6.',
-    link: '/project6',
-    sections: [
-      { id: 'section-1', title: 'Section 1', content: 'Content for Section 1' },
-      { id: 'section-2', title: 'Section 2', content: 'Content for Section 2' },
       // Add more sections as needed
     ],
   },

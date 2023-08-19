@@ -95,7 +95,7 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        <div className={`md:flex top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50' : 'hidden'}`}>
+        <div className={`md:flex md:justify-end top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50' : 'hidden'}`}>
           <Link
             to="/work"
             className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-lg lg:text-xl ${location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
@@ -104,14 +104,14 @@ function Navbar() {
           >
             work
           </Link>
-          <Link
+          {/* <Link
             to="/fun"
             className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-lg lg:text-xl ${location.pathname === '/fun' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
               }`}
             onClick={closeNav}
           >
             fun
-          </Link>
+          </Link> */}
           <Link
             to="/contact"
             className={`block mt-4 md:mt-0 md:ml-0 ml-4 text-base md:text-lg lg:text-xl ${location.pathname === '/contact' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
