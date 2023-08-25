@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import '../App.css';
 import PageContainer from '../elements/PageContainer';
 import { projects } from '../data/projectsData'; // Import your projects data here
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -51,7 +50,7 @@ function Project() {
     <PageContainer>
       <div className="flex flex-col md:flex-row mt-20">
 
-        <nav className={`md:w-1/6 ${showSidebar ? 'fade-in' : 'fade-out'
+        <nav className={`md:w-1/6 ${showSidebar ? 'animate-fadeIn' : 'animate-fadeOut'
           }`} >
           {showSidebar && (
             <ul className={`p-4 space-y-2 md:space-y-4 fixed top-0 hidden md:block`} style={{

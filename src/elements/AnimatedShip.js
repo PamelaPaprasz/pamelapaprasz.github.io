@@ -8,15 +8,17 @@ function AnimatedImage() {
   });
 
   return (
+    <div className='group'>
     <div
       ref={ref}
-      className={`animated-image hover:@apply wave  ${inView ? 'animate-wave' : ''}`}
+      className={`animated-image hover:animate-downAndUp  ${inView ? 'animate-wave' : ''}`}
     >
       <img
         src="/assets/submarine.svg"
         alt="Hero Image"
         className="w-full h-full object-contain"
       />
+    </div>
     </div>
   );
 }

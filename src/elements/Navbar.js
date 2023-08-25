@@ -95,7 +95,7 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        <div className={`md:flex md:justify-end top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50' : 'hidden'}`}>
+        <div className={`md:flex md:justify-end top-16 right-4 left-0 w-64 bg-ferrariRed ${open ? 'absolute flex flex-col h-screen w-screen overflow-hidden z-50 mobile-menu animate-growDown transform-origin-top center' : 'hidden'}`}>
           <Link
             to="/work"
             className={`block mt-4 md:mt-0 md:mr-6 md:ml-0 ml-4 text-base md:text-lg lg:text-xl ${location.pathname === '/work' ? 'font-bold text-evenMorePaleBeige underline' : 'hover:font-bold hover:text-evenMorePaleBeige'
