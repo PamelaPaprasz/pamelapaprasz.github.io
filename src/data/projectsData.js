@@ -31,14 +31,14 @@ export const projects = [
                 <h3 class="text-2xl font-semibold mb-4 text-gray-800">🎯 High-level Goals</h3>
       
 
-              <div class="flex basis-2/4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6 mr-3 ">
+              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
                 <h3 class="text-xl font-semibold mb-2">1. Seamless Language Integration 🗣️</h3>
                 <p class="text-gray-600">Integrate language learning seamlessly into the chat experience, allowing users to practice and improve their language skills while having real conversations.</p>
               </div>
               
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6 ml-3">
+              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
                 <h3 class="text-xl font-semibold mb-2">2. Reward Program 🏆</h3>
                 <p class="text-gray-600">Create a rewarding program within our chat application to enhance user retention and provide a meaningful incentive for users to engage.</p>
               </div>
