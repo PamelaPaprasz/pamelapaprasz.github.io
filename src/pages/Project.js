@@ -90,18 +90,20 @@ function Project() {
                 section.showInMenu && (
 
                   <li
-                    className={`${activeSection === section.id ? 'bg-blue-200 text-white font-semibold' : 'text-gray-800'
+                    className={`${activeSection === section.id ? 'bg-lightBlue text-white font-semibold rounded-md' : 'rounded-md text-gray-700'
                       }`}
                     key={section.id}
                   >
                     <a
                       href={`#${section.id}`}
-                      className="block p-2 hover:bg-blue-200 flex items-center"
+                      className="block p-2 rounded-md hover:bg-lightBlue hover:bg-opacity-25 flex items-center"
                     >
                       {section.icon && (
                         <FontAwesomeIcon
                           icon={section.icon}
-                          className="mr-2 text-blue-500"
+                          className=
+                          {`${activeSection === section.id ? 'mr-2 text-white' : 'text-lightBlue mr-2'
+                      }`}
                         />
                       )}
                       <span>{section.title}</span>

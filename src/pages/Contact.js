@@ -29,7 +29,7 @@ function Contact() {
       <PageContainer>
         <div className='mt-20'>
           <p className="text-extraDarkBeige text-left text-2xl md:text-7xl mt-8 md:mt-20 font-bold leading-[2.5rem] md:leading-[8.5rem]">
-            <a href="mailto:your.email@example.com" className="text-evenMorePaleBeige hover:text-extraDarkBeige"
+            <a href="mailto:lets.talk.about.ux.design@gmail.com" className="text-evenMorePaleBeige hover:text-extraDarkBeige"
               style={{
                 textShadow: '-1px -1px 0 #3E3526, 1px -1px 0 #3E3526, -1px 1px 0 #3E3526, 1px 1px 0 #3E3526',
               }}

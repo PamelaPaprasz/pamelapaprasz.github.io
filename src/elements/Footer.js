@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <footer className="container mx-auto bg-transparent text-darkBeige p-4 flex justify-between w-full bottom-0">
+    <footer className="container mx-auto bg-transparent text-gray-500 p-4 flex justify-between w-full bottom-0">
       <div className="text-left w-full"> {/* Add a container to center-align the content */}
         © 2023 Pamela Paprasz. All rights reserved.
       </div>
