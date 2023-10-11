@@ -640,13 +640,6 @@ export const projects = [
                   Busy lifestyles often leave users with limited time to research recipes and gather ingredients. Quick access to a variety of recipes that suit their tastes and available ingredients is essential.
                 </p>
               </div>
-      
-              <div class="bg-white rounded-lg p-6 shadow-md">
-                <h3 class="text-xl font-semibold mb-2">Iterative Design</h3>
-                <p class="text-gray-600">
-                  The design process was iterative, involving user feedback and continuous refinement to meet user needs effectively.
-                </p>
-              </div>
             </div>
           </div>
         `,
