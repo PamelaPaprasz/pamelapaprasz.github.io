@@ -1,4 +1,4 @@
-import { faCode, faStar, faComments, faLifeRing, faUsers, faChartLine, faFileAlt, faRocket, faDraftingCompass, faDatabase, faChartBar, faBullseye, faBook, faUserAlt, faPencilRuler, faPalette, faBrain /*faSketch*/ } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faStar, faComments, faLifeRing, faUsers, faChartLine, faFileAlt, faRocket, faDraftingCompass, faDatabase, faChartBar, faBullseye, faBook, faUserAlt, faPencilRuler, faPalette, faBrain, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 export const projects = [
   {
@@ -593,93 +593,114 @@ export const projects = [
   //     // Add more sections as needed
   //   ],
   // },
-  // {
-  //   id: 4,
-  //   title: 'Smart Cookbook',
-  //   description: 'Seamless shopping integration for your cooking needs.',
-  //   link: '/smartCookbook',
-  //   imageUrl: '/assets/girl.jpg',
-  //   backgroundImagePosition: 'bottom',
-  //   sections: [
-  //     {
-  //       id: 'section-0',
-  //       title: 'Challenges and My Role',
-  //       content: `
-  //         <div class="bg-gradient-to-r from-ferrariRed to-red-600 rounded-lg p-6 shadow-lg mb-6">
-  //           <h2 class="text-3xl font-semibold mb-4 text-white">Challenges and My Role</h2>
+  {
+    id: 4,
+    title: 'Smart Cookbook',
+    slogan: 'Seamless shopping integration for your cooking needs.',
+    description: 'Addressing real user needs through user-centered design and creative problem-solving.',
+    link: '/smartCookbook',
+    imageUrl: '/assets/girl.jpg',
+    logoUrl: '/assets/smartcookbooklogo.png',
+    backgroundImagePosition: 'bottom',
+    sections: [
+      {
+        id: 'section-1',
+        title: 'Challenge',
+        icon: faBullseye,
+        showInMenu: true,
+        content: `
+          <div class="border-l-8 border-ferrariRed p-6 mb-8">
+            <p class="text-xl mb-6">Choosing what to cook can be a daily challenge for many individuals, whether they are experienced home chefs or beginners in the kitchen. Several obstacles can make this process less enjoyable and efficient.</p>
       
-  //           <div class="space-y-4">
-  //             <div class="bg-white rounded-lg p-6 shadow-md">
-  //               <h3 class="text-xl font-semibold mb-2">Research and Analysis</h3>
-  //               <p class="text-gray-800">
-  //                 I began by conducting thorough research, analyzing market trends, and studying similar apps. This research helped me understand user expectations and the competitive landscape.
-  //               </p>
-  //             </div>
+            <div class="space-y-4">
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Ingredient Availability</h3>
+                <p class="text-gray-600">
+                Users often find it challenging to decide what to cook when they are unsure if they have all the necessary ingredients at home. The prospect of running to the grocery store for missing items can be discouraging, especially after a long day.
+                </p>
+              </div>
       
-  //             <div class="bg-white rounded-lg p-6 shadow-md">
-  //               <h3 class="text-xl font-semibold mb-2">Creating a Seamless Transition</h3>
-  //               <p class="text-gray-800">
-  //                 My primary task was to design a seamless transition from browsing recipes to adding ingredients to a shopping cart on external websites. This required careful consideration of user flow and retailer integration.
-  //               </p>
-  //             </div>
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Variety and Inspiration</h3>
+                <p class="text-gray-600">
+                  Limited knowledge of different recipes and cuisines can lead to repetitive meal choices. Users may be stuck in a culinary rut, preparing the same dishes repeatedly, resulting in monotony.
+                </p>
+              </div>
       
-  //             <div class="bg-white rounded-lg p-6 shadow-md">
-  //               <h3 class="text-xl font-semibold mb-2">Enhancing User Experience</h3>
-  //               <p class="text-gray-800">
-  //                 I aimed to enhance the overall shopping experience by ensuring users could easily identify and select the ingredients they needed while benefiting from price comparisons and trusted retailers.
-  //               </p>
-  //             </div>
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Meal Planning</h3>
+                <p class="text-gray-600">
+                  Planning a balanced and diverse meal schedule can be time-consuming and overwhelming. Users might struggle to create shopping lists that align with their dietary preferences and nutritional goals.
+                </p>
+              </div>
       
-  //             <div class="bg-white rounded-lg p-6 shadow-md">
-  //               <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
-  //               <p class="text-gray-800">
-  //                 Collaboration with development and product management teams was essential to ensure technical feasibility and alignment with project goals.
-  //               </p>
-  //             </div>
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Time Constraints</h3>
+                <p class="text-gray-600">
+                  Busy lifestyles often leave users with limited time to research recipes and gather ingredients. Quick access to a variety of recipes that suit their tastes and available ingredients is essential.
+                </p>
+              </div>
       
-  //             <div class="bg-white rounded-lg p-6 shadow-md">
-  //               <h3 class="text-xl font-semibold mb-2">Iterative Design</h3>
-  //               <p class="text-gray-800">
-  //                 The design process was iterative, involving user feedback and continuous refinement to meet user needs effectively.
-  //               </p>
-  //             </div>
-  //           </div>
-  //         </div>
-  //       `,
-  //     },
-  //     {
-  //       id: 'section-2',
-  //       title: 'Transition',
-  //       content: `
-  //         <div class="rounded-lg p-4 py-10 py-10 shadow-lg">
-  //           <h2 class="text-3xl font-semibold mb-4">Streamlined Transition from Recipes to Shopping Cart</h2>
-  //           <p class="text-base">
-  //             To achieve this, I carefully designed the transition process from browsing recipes to adding ingredients to a shopping cart on external websites. Here's how it works:
-  //           </p>
-  //           <ul class="list-disc list-inside text-base mt-4">
-  //             <li>Ingredient Identification: When users select a recipe, the app intelligently identifies the required ingredients. It then provides users with options for purchasing these ingredients from multiple online retailers.</li>
-  //             <li>Retailer Selection: Users can choose their preferred online retailer or grocery store from a list of available options. This flexibility ensures that users can shop from their favorite retailers or select the one offering the best prices.</li>
-  //             <li>Seamless Redirection: Once users select their preferred retailer, the app seamlessly redirects them to the retailer's website or app. This redirection is a transparent process, ensuring users feel in control of their shopping journey.</li>
-  //             <li>Effortless Shopping: Users find the ingredients pre-populated in their shopping cart on the retailer's platform. They can review and modify their cart as needed, benefiting from the retailer's familiar checkout process.</li>
-  //           </ul>
-  //         </div>
-  //       `,
-  //     },
-  //     {
-  //       id: 'section-3',
-  //       title: 'Enhancing Experience',
-  //       content: `
-  //         <div class="border-l-8 border-ferrariRed rounded-lg p-4 py-10 py-10 shadow-lg mb-6">
-  //           <h2 class="text-3xl font-semibold mb-4">Enhancing the Shopping Experience</h2>
-  //           <p class="text-base">
-  //             This integration not only simplifies the shopping experience but also provides users with access to a wide range of products, price comparisons, and the convenience of shopping from trusted retailers. It's a feature that aligns with the Smart Cookbook's mission of making cooking more accessible and cost-effective.
-  //           </p>
-  //         </div>
-  //       `,
-  //     },
-  //     // You can add more sections if needed
-  //   ],
-  // },  
+              <div class="bg-white rounded-lg p-6 shadow-md">
+                <h3 class="text-xl font-semibold mb-2">Iterative Design</h3>
+                <p class="text-gray-600">
+                  The design process was iterative, involving user feedback and continuous refinement to meet user needs effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        `,
+      },
+      {
+        id: 'section-2',
+        title: 'Solution',
+        icon: faLightbulb,
+        showInMenu: true,
+        content: `
+        <section id="solution" class="border-l-8 border-ferrariRed p-6 mb-8">
+        <div class="container mx-auto">
+          <p class="text-xl mb-6">The Smart Cookbook app aims to address these challenges by providing a one-stop solution for recipe selection, meal planning, and ingredient acquisition. It simplifies the process of choosing what to cook and enhances the overall cooking experience for users.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2">Streamlined Recipe Selection</h3>
+                    <p class="text-gray-600">The app offers a vast library of recipes from various cuisines, categorized by dietary preferences, cooking time, and available ingredients. Users can easily browse and choose recipes that match their desires and what they have at home.</p>
+                </div>
+                <div class="rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2">Instant Shopping Integration</h3>
+                    <p class="text-gray-600">To overcome the obstacle of missing ingredients, the Smart Cookbook integrates with online retailers and local grocery stores. Users can add the required ingredients directly to their shopping cart and order them without leaving the app.</p>
+                </div>
+                <div class="rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2">Personalization</h3>
+                    <p class="text-gray-600">The app allows users to set dietary preferences, allergies, and dietary restrictions. It tailors recipe suggestions to match these preferences, ensuring a personalized and enjoyable cooking experience.</p>
+                </div>
+                <div class="rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2">Meal Planning</h3>
+                    <p class="text-gray-600">Users can plan their weekly or monthly meals using the app's meal planner feature. It automatically generates shopping lists, saving time and reducing the stress of planning.</p>
+                </div>
+                <div class="rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-2">Variety and Inspiration</h3>
+                    <p class="text-gray-600">The Smart Cookbook provides a wide range of recipes, inspiring users to explore new cuisines and flavors. With the convenience of ingredient ordering, there are no barriers to trying something new.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        `,
+      },
+      {
+        id: 'section-3',
+        title: 'Conclusion',
+        icon: faStar,
+        showInMenu: true,
+        content: `
+          <div class="p-6 mb-6">
+            <p class="text-xl">
+              By understanding these user challenges and offering an innovative solution, the Smart Cookbook app not only simplifies the recipe selection process but also provides a more convenient and enjoyable cooking experience.
+            </p>
+          </div>
+        `,
+      },
+    ],
+  },  
   {
     id: 5,
     title: 'Nosh Nanny',

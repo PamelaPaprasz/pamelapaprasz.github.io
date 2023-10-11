@@ -119,11 +119,14 @@ function Project() {
         {/* Main Content */}
         <div className="flex-1 p-4 md:p-8">
           <div className="mb-12 flex items-center justify-start">
+            <div className="flex items-center w-12 h-12 mb-2 mr-6 rounded-lg">
             <img
               src={project.logoUrl}
               alt="Logo"
-              className="w-12 h-12 mb-2 mr-6 rounded-lg"
+              className="rounded-lg"
             />
+            </div>
+            
             <h1 className="text-lg font-semibold text-center">{project.title}</h1>
           </div>
           <div className="mb-24">
