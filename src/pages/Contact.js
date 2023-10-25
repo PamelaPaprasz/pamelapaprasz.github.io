@@ -58,7 +58,7 @@ function Contact() {
             also sneak a peek on my{' '}
             <br />
             <a
-              href="/assets/cv.pdf" // Update the path to your CV
+              href="/assets/cv1.pdf" // Update the path to your CV
               target="_blank"
               rel="noopener noreferrer"
               // className="text-evenMorePaleBeige hover:text-ferrariRed"
