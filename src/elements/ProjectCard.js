@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io';
 
 function ProjectCard({ project }) {
+
+  const handleRightClick = (e, path) => {
+    if (e.button === 2) {
+      window.open(path, '_blank');
+    }
+  };
+
   return (
-    <Link to={`/work/${project.id}`} className="block mb-4 p-4">
+    <Link to={`/work/${project.id}`} onMouseUp={(e) => handleRightClick(e, `/work/${project.id}`)} className="block mb-4 p-4">
       <div className="relative h-[450px] bg-superLightBeige rounded-lg shadow-md overflow-hidden">
         <div
           style={{
