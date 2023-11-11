@@ -14,7 +14,7 @@ function AnimatedImage() {
       className={`animated-image hover:animate-downAndUp  ${inView ? 'animate-wave' : ''}`}
     >
       <img
-        src="/assets/submarine.svg"
+        src="/assets/rocket-launch.svg"
         alt="Hero Image"
         className="w-full h-full object-contain"
       />

@@ -83,7 +83,12 @@ module.exports = {
         extraDarkBeige: '#3E3526', // for heading
         royalBlue: '#00205B',
         lightBlue: '#0099ff',
-        lightGrey: '#CDC9C9'
+        extraLightGrey: '#B0BAC9',
+        lightGrey: '#8090A9',
+        mediumGrey: '#71829E',
+        mediumDarkGrey: '#4D5B72',
+        darkGrey: '#434F62',
+        baseGrey: '#374151'
       },
     },
   },

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail, AiOutlineProfile } from 'react-icons/ai';
 import '../App.css';
 
 function Navbar() {
@@ -59,10 +60,10 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center p-4 relative">
         <Link to="/" className="text-xl font-semibold" onClick={closeNav}>
           <img
-            src="/assets/submarine.svg"
+            src="/assets/rocket-launch_light.svg"
             alt="Pamela Paprasz Logo"
-            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4)) scale-x-[-1]"
-            />
+            className="w-10 h-10 mr-2 transition-transform transform hover:scale-110 drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4))"
+          />
         </Link>
         <div className="md:hidden">
           <button
@@ -120,6 +121,43 @@ function Navbar() {
           >
             contact
           </Link>
+          {open && (
+            <>
+              <Link
+                to="/assets/cv1.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block mt-6 md:mt-0 md:ml-0 ml-4 text-base md:text-lg lg:text-xl`}
+                onClick={closeNav}
+              >
+                <AiOutlineProfile size={24} />
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/paprasz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block mt-6 md:mt-0 md:ml-0 ml-4 text-base md:text-lg lg:text-xl`}
+                onClick={closeNav}
+              >
+                <AiFillLinkedin size={24} />
+              </Link>
+              <Link
+                to="https://github.com/pamelapaprasz" // Update with your GitHub profile URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block mt-6 md:mt-0 md:ml-0 ml-4 text-base md:text-lg lg:text-xl`}
+                onClick={closeNav}
+              >
+                <AiFillGithub size={24} />
+              </Link>
+              <Link to="mailto:lets.talk.about.ux.design@gmail.com" className={`block mt-6 md:mt-0 md:ml-0 ml-4 text-base md:text-lg lg:text-xl`}
+                onClick={closeNav}
+              ><AiOutlineMail size={24} />
+              </Link>
+            </>
+
+          )}
+
         </div>
       </div>
     </nav>

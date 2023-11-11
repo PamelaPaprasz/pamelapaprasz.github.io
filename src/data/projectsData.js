@@ -1,23 +1,38 @@
-import { faCode, faStar, faComments, faLifeRing, faUsers, faChartLine, faFileAlt, faRocket, faDraftingCompass, faDatabase, faChartBar, faBullseye, faBook, faUserAlt, faPencilRuler, faPalette, faBrain, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faComments, faUsers, faRocket, faBullseye, faBook, faUserAlt, faPencilRuler, faPalette, faBrain, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 export const projects = [
   {
     id: 1,
     title: 'ChatLingo',
-    slogan: 'Where real conversations become your classroom.',
-    description: 'Summary of the design process for creating ChatLingo: a chat application that breaks down language barriers.',
+    slogan: 'Making language learning a breeze through everyday chitchat and real-life convos.',
+    description: 'UX Design . Conceptual Project',
     link: '/chatLingo',
-    imageUrl: '/assets/cartoon.png',
-    logoUrl: '/assets/ChatLingoLogo.png',
+    imageUrl: '/assets/chat.jpg',
+    logoUrl: '/assets/chat.jpg',
     backgroundImagePosition: 'center',
     sections: [
+      {
+        id: 'section-0',
+        showInMenu: false,
+        content: `
+          <img class="w-full h-64 object-cover my-8" src="/assets/chat.jpg" alt="Image of a chat app">
+          <p class="text-2xl font-semibold mb-4 text-darkGrey">Quick Summary</p>
+          <p class="leading-loose text-lg">With this project my goal was to design the go-to chat app for mastering languages effortlessly. With ChatLingo intuitive design and built-in translator, users can dive into real-time conversations while leveling up their language game. Plus, they can also make their own flashcards, whip up cool grammar guides, and let the app surprise them with awesome dialogues making their learning adventure both exciting and complete.
+          </p>  `
+      },
+      {
+        id: 'section-0.1',
+        showInMenu: false,
+        content: `
+          <p class="mt-16 md:mt-24 text-3xl text-lightGrey">Getting started...</p> `
+      },
       {
         id: 'section-1',
         icon: faBullseye,
         showInMenu: true,
-        title: 'The Challenge',
+        title: 'Challenge',
         content: `
-          <p class="italic font-md">Design a chat application with a built-in translator and grammar explanations for language learners.</p>
+          <p class="text-lg leading-loose">My goal? To make chatting the coolest way to pick up a new language! I want people to learn without even noticing, just by chatting like they do every day. No boring stuff, just real talk and boom! They are speaking like a local!</p>
         `,
         subSections: [
           {
@@ -26,413 +41,332 @@ export const projects = [
             showInMenu: false,
             title: '',
             content: `
-              <div class="border-l-8 border-ferrariRed p-6 mb-12">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-700">🎯 High-level Goals</h3>
-
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">1. Seamless Language Integration 🗣️</h3>
-                <p class="text-gray-600">Integrate language learning seamlessly into the chat experience, allowing users to practice and improve their language skills while having real conversations.</p>
-              </div>
-              
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">2. Reward Program 🏆</h3>
-                <p class="text-gray-600">Create a rewarding program within our chat application to enhance user retention and provide a meaningful incentive for users to engage.</p>
-              </div>
-              </div>
-            
-              <div >
-                <p class="text-lg">These high-level goals will guide the development of our chat application, focusing on user engagement through a rewarding experience, a distinct brand identity, and the integration of language learning into the chat platform.</p>
-              </div>
-              </div>
-            `,
-          },
-          {
-            id: 'sub-section-1.2',
-            icon: faUserAlt,
-            showInMenu: false,
-            title: '',
-            content: `
-              <div class="bg-white border-r-8 border-ferrariRed p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">👩‍💼 My Tasks</h3>
-                <p class="text-lg mb-6">Throughout the project, I undertook various responsibilities in alignment with ChatLingo's high-level goals:</p>
-                <ul class="ml-6 text-gray-600">
-                  <li class="my-8"><strong>🤔 Customer Insights & Ideation</strong><p>I actively gathered insights from potential users and engaged in ideation sessions to understand their needs and preferences.</p></li>
-                  <li class="my-8"><strong>🌟 Building the Project Vision</strong><p>I contributed to shaping the project's vision, aligning it with ChatLingo's goal of providing seamless language learning within a chat environment.</p></li>
-                  <li class="my-8"><strong>📅 Planning and Scope Definition</strong><p>I participated in planning and defining the scope of the project, ensuring it encompassed the high-level goals of integration, engagement, and personalization.</p></li>
-                </ul>
-                <p class="text-lg mt-6">My role was to drive the project towards its high-level goals of integrating language learning seamlessly, fostering user engagement, and delivering a personalized and rewarding experience. Collaborating with fellow designers allowed me to refine my work and ensure the best possible user experience.</p>
-              </div>
-            `,
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-darkGrey mb-2">Role</h3>
+              <p class="leading-loose text-mediumDarkGrey">This was an individual project and I was responsible for the entire design process solo. My responsibilities included conducting user research, conceptualizing the app's features, and creating an intuitive and engaging user interface. I oversaw the entire design process, from initial ideation to the implementation of user feedback, ensuring that the final product met the highest standards of functionality and user experience.</p>
+            </div>
+            <div class="leading-normal bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-darkGrey mb-2">Methods</h3>
+              <p class="text-mediumDarkGrey leading-loose">
+                User interviews, Business analysis, Competitive analysis, User flow analysis, Persona creation, Systems mapping, User journey mapping, Feature prioritization, Wireframing
+                Prototyping, Usability testing, Iterative design process, Accessibility testing, Cross-platform testing
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold text-darkGrey mb-2">Approach</h3>
+              <p class="leading-loose text-mediumDarkGrey">When I was working on ChatLingo, I talked to a bunch of language funs to see what they really wanted. Then, I checked out some other language apps to see what they were up to. I mapped out some cool ideas and turned them into simple sketches.
+              I got my friends to test it out, and fixed the annoying bits. I tried a few funky things and went with what everyone liked the most. And of course, I made sure it runs smoothly on all kinds of gadgets, so people can chat and learn wherever they are!</p>
+            </div>
+          </div>
+              `,
           },
         ],
+      },
+      {
+        id: 'section-2',
+        showInMenu: false,
+        content: `
+          <p class="mt-16 md:mt-24 text-3xl text-lightGrey">Understanding the problem...</p> `
       },
       {
         id: 'section-3',
-        icon: faBrain,
+        icon: faRocket,
         showInMenu: true,
-        title: 'Understanding',
+        title: 'Competitor Analyzis',
         content: `
-          <p class="italic font-md">During this phase, my primary goal was to gain a deep understanding of the project's objectives, target audience, market landscape, and user needs.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-xl font-semibold text-darkGrey mb-2">WhatsApp</p>
+          <img class="w-full h-64 object-cover my-8" src="/assets/what_is_whatsapp.png" alt="Image of WhatsApp">
+          <p class="leading-loose text-mediumDarkGrey">WhatsApp is a popular messaging app, but it lacks specific language learning functionalities like built-in translation and comprehensive grammar explanations.</p>
+        </div>
+        <div class="leading-normal bg-white p-6 rounded-lg shadow-md">
+          <p class="text-xl font-semibold text-darkGrey mb-2">HelloTalk</p>
+          <img class="w-full h-64 object-cover my-8" src="/assets/hellotalk-main.png" alt="Image of HelloTalk">
+          <p class="leading-loose text-mediumDarkGrey">
+            HelloTalk connects language learners, but it doesn't provide built-in translation and detailed grammar explanations.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-xl font-semibold text-darkGrey mb-2">Duolingo</p>
+          <img class="w-full h-64 object-cover my-8" src="/assets/duolingo.jpg" alt="Image of DuoLingo">
+          <p class="leading-loose text-mediumDarkGrey">Duolingo gamifies language learning, but it lacks real-time chat functionality for practice and communication.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-xl font-semibold text-darkGrey mb-2">Tandem</p>
+          <img class="w-full h-64 object-cover my-8" src="/assets/tandem.png" alt="Image of Tandem">
+          <p class="leading-loose text-mediumDarkGrey">Tandem connects users for language exchange but may lack advanced translation capabilities and grammar support.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-xl font-semibold text-darkGrey mb-2">Babbel</p>
+          <img class="w-full h-64 object-cover my-8" src="/assets/babel6.png" alt="Image of Babbel">
+          <p class="leading-loose text-mediumDarkGrey">Babbel offers structured language courses but doesn't include real-time chat features for practice.</p>
+        </div>
+      </div>
+      <div class="pb-6 my-10">
+                <p class="text-lg text-gray-600">Based on my analysis, existing apps often focus on messaging and conversation practice but may lack robust language learning features like built-in translation and comprehensive grammar explanations.</p>
+                <p class="text-lg text-gray-600 mt-4">ChatLingo stands out by seamlessly integrating language learning tools, real-time translation, grammar assistance, vocabulary expansion, and personalized learning features within the chat interface.</p>
+              </div>
         `,
-        subSections: [
-          {
-            id: 'sub-section-3.1',
-            showInMenu: false,
-            title: "",
-            content: `
-            <div class="shadow-lg p-6 mb-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">🚀 Competitor Analysis</h3>
-                <p class="mb-6 text-lg text-gray-600">We've conducted a thorough analysis of our competitors to understand their strengths and weaknesses. Here's what we found:</p>
-             
-              
-              <div class="border-y-8 border-ferrariRed p-6  ">
-                <h3 class="text-xl font-semibold mb-2">WhatsApp 📱</h3>
-                <p class="text-gray-600">WhatsApp is a popular messaging app, but it lacks specific language learning functionalities like built-in translation and comprehensive grammar explanations.</p>
-              </div>
-              
-              <div class="border-b-8 border-ferrariRed p-6  ">
-                <h3 class="text-xl font-semibold mb-2">HelloTalk 🗣️</h3>
-                <p class="text-gray-600">HelloTalk connects language learners, but it doesn't provide built-in translation and detailed grammar explanations.</p>
-              </div>
-              
-              <div class="border-b-8 border-ferrariRed p-6  ">
-                <h3 class="text-xl font-semibold mb-2">Duolingo 🦉</h3>
-                <p class="text-gray-600">Duolingo gamifies language learning, but it lacks real-time chat functionality for practice and communication.</p>
-              </div>
-              
-              <div class="border-b-8 border-ferrariRed p-6  ">
-                <h3 class="text-xl font-semibold mb-2">Tandem ✈️</h3>
-                <p class="text-gray-600">Tandem connects users for language exchange but may lack advanced translation capabilities and grammar support.</p>
-              </div>
-              
-              <div class="border-b-8 mb-6 border-ferrariRed p-6 ">
-                <h3 class="text-xl font-semibold mb-2">Babbel 📚</h3>
-                <p class="text-gray-600">Babbel offers structured language courses but doesn't include real-time chat features for practice.</p>
-              </div>
-              
-              <div class="pb-6">
-                <p class="text-lg text-gray-600">Based on our analysis, existing apps often focus on messaging and conversation practice but may lack robust language learning features like built-in translation and comprehensive grammar explanations.</p>
-                <p class="text-lg text-gray-600 mt-4">ChatLingo stands out by seamlessly integrating language learning tools, real-time translation, grammar assistance, vocabulary expansion, and personalized learning features within the chat interface. We aim to empower language learners to communicate effectively while enhancing their language skills and understanding.</p>
-              </div>
-            </div>
-            <div class="p-8 border-l-8 border-ferrariRed ">
-            <h2 class="text-3xl font-bold mb-6">🚀 Understanding Language Learners</h2>
-            <p class="text-lg mb-4">
-              We embarked on a journey to unveil the needs and desires of language learners. Our discoveries are summarized below:
-            </p>
-         
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-semibold mb-2">Pain Points and Challenges</h3>
-              <ul class="ml-6 text-gray-600 py-2">
-                <li class="py-2">🌎 Language Barrier</li>
-                <li class="py-2">📜 Grammar and Sentence Structure</li>
-                <li class="py-2">😓 Lack of Confidence</li>
-                <li class="py-2">📚 Limited Vocabulary</li>
-              </ul>
-            </div>
-            
-            
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-semibold mb-2">Preferred Learning Methods and Features</h3>
-              <ul class=" ml-6 text-gray-600 py-2">
-                <li class="py-2">🗣️ Conversational Practice</li>
-                <li class="py-2">🌐 Contextual Learning</li>
-                <li class="py-2">📖 Grammar Explanations</li>
-                <li class="py-2">🎮 Interactive Exercises</li>
-                <li class="py-2">🧩 Personalization</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-md mt-8 col-span-1">
-            <h3 class="text-xl font-semibold mb-4">Preferred Application Features</h3>
-            <ul class="ml-6 text-gray-600 py-2">
-              <li class="py-2">🌐 Real-Time Translation</li>
-              <li class="py-2">📝 Grammar Assistance</li>
-              <li class="py-2">📚 Vocabulary Expansion</li>
-              <li class="py-2">👥 Conversation Partners</li>
-              <li class="py-2">📊 Progress Tracking</li>
-            </ul>
-          </div>
-
-          <div class="py-8 mt-8">
-            <p class="text-lg">
-              In light of these findings, language learners grapple with <strong>common challenges: language barriers, grammar comprehension, confidence, and limited vocabulary.</strong>
-            </p>
-            <p class="text-lg mt-4">
-              Their preferred learning methods include conversational practice, contextual learning, and interactive exercises. The chat application should encompass features like real-time translation, grammar assistance, vocabulary expansion tools, and the ability to connect with conversation partners. Personalization and progress tracking functionalities will further enhance the user experience, enabling learners to tailor their language learning journey and monitor their progress effectively.
-            </p>
-          </div>
-          </div>
-              <div class="border-l-8 border-ferrariRed p-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">🎯 Who Are Our Learners?</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <div class="bg-white rounded-lg p-4 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Age</h4>
-                    <p class="text-gray-600">Primarily young adults and adults actively engaged in language learning.</p>
-                  </div>
-                  <div class="bg-white rounded-lg p-4 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Language Proficiency</h4>
-                    <p class="text-gray-600">Early-stage learners with basic language knowledge.</p>
-                  </div>
-                  <div class="bg-white rounded-lg p-4 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Learning Goals</h4>
-                    <p class="text-gray-600">Motivated to improve language skills and confidence.</p>
-                  </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-4 mb-12">
-                  <div class="bg-white rounded-lg p-4 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Tech Proficiency</h4>
-                    <p class="text-gray-600">Basic proficiency with digital devices and mobile apps.</p>
-                  </div>
-                  <div class="bg-white rounded-lg p-4 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Specific Languages</h4>
-                    <p class="text-gray-600">Focused on learning specific languages or language families.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="border-l-8 border-ferrariRed p-6 mb-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">High-level personas 😎</h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  <div class="bg-white rounded-lg p-6 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Sarah - The French Maestro 🇫🇷</h4>
-                    <p class="text-gray-600">Sarah is a language connoisseur with a passion for French. She dreams of strolling along the Seine in Paris and ordering croissants like a true Parisian.</p>
-                  </div>
-                  <div class="bg-white rounded-lg p-6 text-center shadow-md">
-                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Alex - The Mandarin Explorer 🇨🇳</h4>
-                    <p class="text-gray-600">Alex is an adventurous learner diving into Mandarin Chinese. He's on a quest to master the characters and unlock the secrets of Chinese culture. 🏮</p>
-                  </div>
-                </div>
-              </div>
-            `,
-          },
-        ],
+       
       },
       {
         id: 'section-4',
-        icon: faBook,
+        icon: faUsers,
         showInMenu: true,
-        title: 'Conceptualization',
-        content: `
-          <div class="border-r-8 border-ferrariRed p-6 mb-6">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-800">🚀 Core Features and Functionalities</h3>
-            <p class="text-lg my-4">Based on our research and the needs of language learners, here are the core features and functionalities that ChatLingo can offer:</p>
-          
+        title: 'User Research',
+        content: `<p class="text-lg leading-loose">The user research phase was all about getting into the minds of language lovers. I chatted, asked a bunch of questions, and even tested some cool features together with language learners. This helped me understand what makes a language learning journey awesome and what sometimes gets in the way. This section highlights what I found and how I used it to make ChatLingo the perfect language sidekick!</p>`,
+        subSections: [
+          {
+            id: 'sub-section-3.1',
+            icon: faRocket,
+            showInMenu: false,
+            title: '',
+            content: `
+          <div class="grid grid-cols-1 gap-8 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl md:text-2xl font-semibold mb-2 md:mb-4 text-darkGrey">Pain Points and Challenges</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-5 gap-8 mt-8 items-start">
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">1</span>
+                  </div>
+                  <p class="font-semibold mb-2">Language Barrier</p>
+                  <p class="text-mediumGrey text-start leading-normal">Dealing with the whole "I don't understand you" vibe.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">2</span>
+                  </div>
+                  <p class="font-semibold mb-2">Grammar</p>
+                  <p class="text-mediumGrey text-start leading-normal">Getting a grip on the rules, tenses, and stuff in a new language.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">3</span>
+                  </div>
+                  <p class="font-semibold mb-2">Sentence Structure</p>
+                  <p class="text-mediumGrey text-start leading-normal">Figuring out how to make those words stick together in the right way.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">4</span>
+                  </div>
+                  <p class="font-semibold mb-2">Lack of Confidence</p>
+                  <p class="text-mediumGrey text-start leading-normal">Feeling like you're fumbling through and everyone knows it.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">5</span>
+                  </div>
+                  <p class="font-semibold mb-2">Limited Vocabulary</p>
+                  <p class="text-mediumGrey text-start leading-normal">When you know what you want to say but can't find the words to say it.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl md:text-2xl font-semibold mb-2 text-darkGrey">Preferred Learning Methods and Features</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-4 gap-8 mt-8 items-start">
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">1</span>
+                  </div>
+                  <p class="font-semibold mb-2">Conversational Practice</p>
+                  <p class="text-mediumGrey text-start leading-normal">Basically, just chatting away to get the hang of it.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">2</span>
+                  </div>
+                  <p class="font-semibold mb-2">Contextual Learning</p>
+                  <p class="text-mediumGrey text-start leading-normal">Learning while knowing what's going on around you.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">3</span>
+                  </div>
+                  <p class="font-semibold mb-2">Grammar Explanations</p>
+                  <p class="text-mediumGrey text-start leading-normal">Getting the lowdown on why the words have to behave a certain way.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">4</span>
+                  </div>
+                  <p class="font-semibold mb-2">Personalization</p>
+                  <p class="text-mediumGrey text-start leading-normal">Making it all about you and how you learn best.</p>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl md:text-2xl font-semibold mb-2 text-darkGrey">Preferred Application Features</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-5 gap-8 mt-8 items-start">
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">1</span>
+                  </div>
+                  <p class="font-semibold mb-2">Real-Time Translation</p>
+                  <p class="text-mediumGrey text-start leading-normal">When the app just tells you what it all means on the spot.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">2</span>
+                  </div>
+                  <p class="font-semibold mb-2">Grammar Assistance</p>
+                  <p class="text-mediumGrey text-start leading-normal">Getting some help when you're like, "What even is this sentence?"</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">3</span>
+                  </div>
+                  <p class="font-semibold mb-2">Vocabulary Expansion</p>
+                  <p class="text-mediumGrey text-start leading-normal">Learning more cool words and phrases to spice up your convo game.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">4</span>
+                  </div>
+                  <p class="font-semibold mb-2">Conversation Partners</p>
+                  <p class="text-mediumGrey text-start leading-normal">Finding buddies to chat with and learn from together.</p>
+                  </div>
+                <div class="flex flex-col items-center justify-center ">
+                  <div class="mb-4 h-12 w-12 border-2 border-lightBlue rounded-full flex items-center justify-center">
+                    <span class="text-xl text-lightBlue font-bold">5</span>
+                  </div>
+                  <p class="font-semibold mb-2">Progress Tracking</p>
+                  <p class="text-mediumGrey text-start leading-normal">Keeping an eye on how far you've come and how much more you've got to go.</p>
+                  </div>
+              </div>
+            </div>
         
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Real-time Translation 🌐</h3>
-            <p class="text-gray-600">Instantly translate messages between native and target languages, seamlessly integrated into the chat interface for smooth communication.</p>
+            <div class="pb-8 mt-2">
+              <p class="text-lg leading-loose">
+              Taking these discoveries into account, language learners face some typical hurdles: language barriers, understanding grammar, feeling confident, and limited vocab.
+              They prefer to learn by chatting, understanding context, and doing interactive stuff. The chat app should have cool features like instant translation, grammar help, word boosters, and the option to talk to other learners. Making it personal and keeping track of progress will make learning even better, letting users customize their experience and see how far they've come.
+              </p>
+              
+            </div>
           </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Grammar Explanations 📜</h3>
-            <p class="text-gray-600">On-demand grammar explanations with contextual examples to enhance comprehension and promote correct language usage.</p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Vocabulary Expansion 📚</h3>
-            <p class="text-gray-600">Tools for vocabulary expansion, including word suggestions, flashcards, and integrated dictionaries, enhancing language proficiency.</p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Interactive Exercises 🎮</h3>
-            <p class="text-gray-600">Engaging language exercises and quizzes that make learning fun and interactive, reinforcing language skills.</p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">Personalized Learning 🧩</h3>
-            <p class="text-gray-600">Customized learning paths, progress tracking, and adaptive content recommendations tailored to individual learner goals and proficiency levels.</p>
-          </div>
-          
-          <div class="pt-6 mt-6">
-            <p class="text-lg">These core features form the foundation of ChatLingo, providing language learners with a comprehensive platform for language acquisition and practice. The seamless integration of language learning tools into the chat experience sets ChatLingo apart from other language learning apps.</p>
-          </div>
-          </div>
-        `,
+              <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-darkGrey">Who Are Our Learners?</h3>
+                <div class="text-lg leading-loose">
+                  Well, they're mostly not all about being language wizards, but they're keen on speaking the language like a pro when they need to. Some are finding the first steps a bit tricky, even though they already understand quite a bit. Writing and speaking are where they need a little extra love. They're pretty cool with tech, even if they're not tech pros. What's more, they're all about diving into specific languages or language families, showing real passion for mastering those language quirks and cultural vibes. Bonus point: they've already got their buddies in the chat app, ready to chat in the language they're learning - talk about a great way to practice!
+                </div>
+              </div>
+              
+              <div class="my-6 mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-mediumDarkGrey">Archetypes</h3>
+                <p class="text-lg leading-loose">I created two archetypes to further understand our user's needs and paint points:</p>
+                <div class="grid grid-cols-1">
+
+                  <div class="bg-white rounded-lg p-6 shadow-md mt-4">
+                    <h4 class="text-lg md:text-xl font-black mb-2 text-mediumDarkGrey">1. Social Learner</h4>
+                    <div class="flex">
+                      <div >
+                        <div class="mb-2 mt-4">
+                          <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Behaviour</p>
+                          <p class="text-md text-mediumGrey">They love mingling and using technology to spice up their language skills. They're all about connecting with their buddies and diving into interactive language adventures.</p>
+                        </div>
+                        <div class="mb-2">
+                          <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Motivation</p>
+                          <p class="text-md text-mediumGrey">Their goal? To seamlessly integrate language learning into their daily grind, speaking the lingo like a pro wherever they go. They crave real-life practice and shy away from piling up more language-learning apps on their screens.</p>
+                        </div>
+                        <div>
+                          <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Needs</p>
+                          <p class="text-md text-mediumGrey">What's holding them back? They're searching for practical, real-life language practice that doesn't feel like another chore. They long for a solution that effortlessly weaves language learning into their daily interactions, without the hassle of juggling multiple apps.</p>
+                        </div>
+                      </div>
+                      <div class="hidden md:block mt-auto justify-end ml-2">
+                        <img class="w-200 object-cover rounded-md" src="/assets/techsavvy1.png" alt="Image of Social learner">
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="mt-8 bg-white rounded-lg p-6 shadow-md">
+                  <h4 class="text-lg md:text-xl font-black mb-2 text-mediumDarkGrey">2. Tech-Savvy Explorer</h4>
+                  <div class="flex">
+                    <div >
+                      <div class="mb-2 mt-4">
+                        <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Behaviour</p>
+                        <p class="text-md text-mediumGrey">They're always on the lookout for the latest and greatest in language tech, diving into a world of innovative solutions and digital tools. They value user-friendly interfaces and enjoy interactive learning experiences that provide instant feedback for continuous improvement.</p>
+                      </div>
+                      <div class="mb-2">
+                        <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Motivation</p>
+                        <p class="text-md text-mediumGrey">Their goal? To blend technology seamlessly with their language learning journey, leveraging digital resources to master the language game effortlessly. They crave a hassle-free integration of language tools into their digital lifestyle for a smooth and engaging learning experience.</p>
+                      </div>
+                      <div>
+                        <p class="text-[14px] font-semibold uppercase text-mediumDarkGrey">Needs</p>
+                        <p class="text-md text-mediumGrey ">They struggle to find user-friendly language learning platforms that seamlessly incorporate technology for practical language application. They're on the lookout for interactive and intuitive solutions that fit right into their tech-savvy lifestyle, offering a seamless and hassle-free language learning experience.</p>
+                      </div>
+                    </div>
+                    <div class="hidden md:block mt-auto justify-end ml-2">
+                      <img class="w-200 object-cover rounded-md scale-x-[-1]" src="/assets/telework.png" alt="Image of Tech Savvy">
+                    </div>
+                  </div>
+                </div> 
+                </div>
+                <div class="my-6 mt-12">
+                  <h3 class="text-3xl mb-4 mt-20 text-mediumGrey uppercase">What's The Need?</h3>
+                  <div>
+                    <div class="flex place-content-evenly">
+                      <div class="flex flex-col justify-center items-end">
+                        <p class="text-lg md:text-2xl mb-8">Both archetypes would need...</p>
+                        <p class="text-right text-xl md:text-4xl mb-4 uppercase font-semibold text-lightGrey leading-loose ">an app that seamlessly integrates language learning into the daily conversations making learning a new language feel like second nature.</p>
+                      </div>
+                      <img class="hidden md:block ml-20 w-4/12 object-contain rounded-md" src="/assets/bulb.png" alt="Image of a bulb">
+                    </div>
+                    <p class="text-lg leading-loose">By integrating language learning with real-world scenarios, users could practice and apply their newfound skills effortlessly. This integration addresses the challenge of bridging the gap between theoretical knowledge and practical communication. We kept this idea of seamless integration at the forefront during the conceptualization phase, ensuring that ChatLingo caters to the diverse and integrated learning needs of our users.</p>
+                  </div>
+                </div>
+              </div>
+
+
+            `,
+          },
+          {
+            id: 'sub-section-3.2',
+            icon: faRocket,
+            showInMenu: false,
+            expandToFullScreen: true,
+            title: 'User Journey Mapping',
+            content: `
+             <div class="overflow-auto"><img class="h-full" src="/assets/userJourneyMapSocialLearner.svg" alt="Image of user journey map"></div>
+            `
+          },
+          {
+            id: 'sub-section-3.2',
+            icon: faRocket,
+            showInMenu: false,
+            expandToFullScreen: true,
+            title: 'Information Architecture',
+            content: `
+             <div class="overflow-auto"><img class="h-full" src="/assets/chatlingoInfoArchitecture.svg" alt="Image of info architecture"></div>
+            `
+          }
+        ],
       },
       {
         id: 'section-5',
+        showInMenu: false,
+        content: `
+          <p class="mt-16 md:mt-24 text-3xl text-lightGrey">Starting the design...</p> `
+      },
+      {
+        id: 'section-6',
         icon: faPencilRuler,
         showInMenu: true,
-        title: 'Design Exploration',
-        content: `
-          <p class="italic font-md">Design is a critical aspect of ChatLingo, as it directly impacts user engagement and the learning experience. Here's a glimpse into our design exploration process.</p>
-        `,
+        title: 'Sketches And Ideation',
+        content: ``,
         subSections: [
           {
             id: 'sub-section-5.1',
             icon: faPalette,
             showInMenu: false,
             title: '',
-            content: `
-              <div class="border-l-8 border-ferrariRed p-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">🌟 Brand Identity High-level Concept</h3>
-                <p class="text-lg">Creating a distinctive brand identity that resonates with language learners must be our primary focus. ChatLingo brand identity should reflect:</p>
-              
-            
-              <div class="bg-white p-6 shadow-md mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold mb-2">Logo Design 🪶</h3>
-                <p class="text-gray-600">We want our logo to combine a speech bubble with elements representing learning and growth, symbolizing ChatLingo's mission to facilitate language learning through conversation.</p>
-              </div>
-              
-              <div class="bg-white p-6 shadow-md rounded-lg">
-                <h3 class="text-xl font-semibold mb-2">Color Palette 🎨</h3>
-                <p class="text-gray-600">Our color palette includes vibrant and welcoming shades of blue and green, signifying communication, growth, and positivity.</p>
-              </div>
-          
-              <p class="text-lg mt-6">The brand identity sets the tone for ChatLingo, making it an inviting and engaging platform for language learners. It communicates our commitment to facilitating meaningful language conversations.</p>
-              
-              </div>
-              <div class="border-l-8 border-ferrariRed p-6 mb-6">
-              <h3 class="text-2xl font-semibold mb-4 text-gray-800">🎨 UI/UX Design</h3>
-              <p class="text-lg">Creating a user-friendly and visually appealing interface was pivotal. Our UI/UX design principles include:</p>
-            
-          
-            <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-              <h3 class="text-xl font-semibold mb-2">Intuitive Navigation 🧭</h3>
-              <p class="text-gray-600">User-friendly navigation and clear information architecture to ensure learners can easily access features and resources.</p>
-            </div>
-            
-            <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-              <h3 class="text-xl font-semibold mb-2">Engaging Interactions 🚀</h3>
-              <p class="text-gray-600">Interactive elements, gamified features, and animations that make language learning enjoyable and encourage user participation.</p>
-            </div>
-
-            <div class="bg-white rounded-lg p-6 mb-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">Mobile-Friendly Design 📱</h3>
-            <p class="text-gray-600">Adaptable design that provides a seamless user experience on various screen sizes, from smartphones to tablets.</p>
-          </div>
-            
-            <div class="bg-white rounded-lg p-6 shadow-md">
-              <h3 class="text-xl font-semibold mb-2">Accessibility 🌐</h3>
-              <p class="text-gray-600">Designing for accessibility to ensure that ChatLingo is inclusive and accessible to users with diverse needs.</p>
-            </div>
-            
-            <div class="mt-6">
-              <p class="text-lg">ChatLingo UI/UX design prioritizes user engagement and ease of use. It fosters an environment where learners can comfortably practice their language skills while exploring a visually appealing and accessible interface.</p>
-            </div>
-            </div>
-            `,
-          },
-        ],
-      },
-      {
-        id: 'section-8',
-        icon: faRocket,
-        showInMenu: true,
-        title: 'Launch & Growth',
-        content: `
-          <p class="italic font-md">The launch phase marks the beginning of ChatLingo's journey. Let's explore how the platform was launched and how it plans to grow.</p>
-        `,
-        subSections: [
-          {
-            id: 'sub-section-8.1',
-            icon: faRocket,
-            showInMenu: false,
-            title: '',
-            content: `
-              <div class="border-l-8 border-ferrariRed p-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">🚀 Launch Strategy</h3>
-                <p class="text-lg">A well-planned launch strategy is essential for introducing ChatLingo to the language learning community.</p>
-            
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">Beta Testing 🧪</h3>
-                <p class="text-gray-600">A closed beta testing phase needs to be done to gather user feedback, identify and resolve issues, and refine the platform before the public launch.</p>
-              </div>
-              
-              <div class="bg-white rounded-lg p-6 shadow-md">
-                <h3 class="text-xl font-semibold mb-2">User Acquisition 🌐</h3>
-                <p class="text-gray-600">Strategies for user acquisition, including partnerships with language learning institutions and digital marketing campaigns needs to be developed to attract a user base.</p>
-              </div>
-              
-              <div class="py-6 mt-6">
-                <p class="text-lg">The launch strategy aimed to ensure a smooth introduction of ChatLingo while building a strong user community from the outset.</p>
-              </div>
-              </div>
-              <div class="border-l-8 border-ferrariRed p-6 mb-6">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-800">📈 Growth and Expansion</h3>
-            <p class="text-lg">ChatLingo's growth and expansion plans are centered around enhancing user experience and accessibility.</p>
-          
-        
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Feature Updates 🚀</h3>
-            <p class="text-gray-600">Regular feature updates and improvements based on user feedback and evolving language learning needs.</p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 class="text-xl font-semibold mb-2">Multilingual Support 🌐</h3>
-            <p class="text-gray-600">Expanding language support to cater to a wider audience, encompassing diverse languages and dialects.</p>
-          </div>
-          
-          <div class="bg-white rounded-lg p-6 shadow-md">
-            <h3 class="text-xl font-semibold mb-2">Global Accessibility 🌍</h3>
-            <p class="text-gray-600">Ensuring that ChatLingo is accessible to users around the world by optimizing server distribution and addressing localization needs.</p>
-          </div>
-          
-          <div class="py-6 mt-6">
-            <p class="text-lg">ChatLingo's growth strategy focuses on continually enhancing the platform's offerings while making it accessible to a global audience.</p>
-          </div>
-          </div>
-            `,
-          },
-        ],
-      },
-      {
-        id: 'section-9',
-        icon: faComments,
-        showInMenu: true,
-        title: 'Community & Support',
-        content: `
-          <p class="italic font-md">Building a thriving community and providing robust support are essential components of ChatLingo's mission. Let's explore how these aspects are nurtured.</p>
-        `,
-        subSections: [
-          {
-            id: 'sub-section-9.1',
-            icon: faUsers,
-            showInMenu: false,
-            title: '',
-            content: `
-              <div class="border-r-8 border-ferrariRed p-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">👫 Community Building</h3>
-                <p class="text-lg">Fostering a sense of belonging and collaboration among language learners is a top priority for ChatLingo.</p>
-                <p class="text-lg">Community building initiatives create a supportive environment where learners can connect, practice, and grow together.</p>
-            
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">Discussion Forums 🗣️</h3>
-                <p class="text-gray-600">Community discussion forums where users can share experiences, seek advice, and practice their language skills through conversation.</p>
-              </div>
-              
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">Language Exchange 🌐</h3>
-                <p class="text-gray-600">Facilitating language exchange partnerships, connecting users looking to learn each other's languages through conversation.</p>
-              </div>
-              </div>
-      
-              <div class="border-r-8 border-ferrariRed p-6 mb-6">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">🆘 Customer Support</h3>
-                <p class="text-lg">Responsive and effective customer support is a cornerstone of ChatLingo's commitment to its users.</p>
-              
-            
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">24/7 Support 🕒</h3>
-                <p class="text-gray-600">Accessible customer support channels available around the clock to assist users with inquiries and issues.</p>
-              </div>
-              
-              <div class="bg-white rounded-lg p-6 shadow-md mb-6">
-                <h3 class="text-xl font-semibold mb-2">Knowledge Base 📚</h3>
-                <p class="text-gray-600">A comprehensive knowledge base with guides, tutorials, and troubleshooting resources to empower users to find solutions independently.</p>
-              </div>
-              
-              <div class="pt-6 mt-6">
-                <p class="text-lg">Exceptional customer support ensures that users have a seamless experience on ChatLingo and receive timely assistance when needed.</p>
-              </div>
-              </div>
-            `,
+            content: ``,
           },
         ],
       },
@@ -453,10 +387,9 @@ export const projects = [
     slogan: 'The plugin that empowers you to make every purchase count.',
     description: 'The process of defining the information architecture of the Spend Less Impact More plugin.',
     link: '/spendLessimpactMore',
-    imageUrl: '/assets/spendless.png',
+    imageUrl: '/assets/volunteer.jpg',
     logoUrl: '/assets/spendlesslogo.png',
-    backgroundImagePosition: 'center',
-    arrowColor: 'light',
+    backgroundImagePosition: 'top',
     sections: [
       {
         id: 'section-2',
@@ -599,9 +532,10 @@ export const projects = [
     slogan: 'Seamless shopping integration for your cooking needs.',
     description: 'Addressing real user needs through user-centered design and creative problem-solving.',
     link: '/smartCookbook',
-    imageUrl: '/assets/girl.jpg',
+    imageUrl: '/assets/groceries.jpg',
     logoUrl: '/assets/smartcookbooklogo.png',
-    backgroundImagePosition: 'bottom',
+    backgroundImagePosition: 'center',
+    arrowColor: 'light',
     sections: [
       {
         id: 'section-1',
@@ -700,8 +634,9 @@ export const projects = [
     slogan: 'Always ready to alert you to ingredients you prefer to avoid.',
     description: 'Understanding diverse user needs and crafting user personas and use cases.',
     link: '/noshnanny',
-    imageUrl: '/assets/creativity.jpg',
+    imageUrl: '/assets/noshnannymagnifier.jpg',
     logoUrl: '/assets/noshnanny.png',
+    arrowColor: 'light',
     backgroundImagePosition: 'center',
       sections: [
           {

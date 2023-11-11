@@ -9,4 +9,5 @@ body {
   color: #374151;
   background-color: #FEFEFC;
   overscroll-behavior: none;
+  line-height: 2;
 }

@@ -54,7 +54,7 @@ function Project() {
           if (element) {
             const rect = element.getBoundingClientRect();
             const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
-            
+
             if (visibleHeight > maxVisibleHeight) {
               maxVisibleHeight = visibleHeight;
               maxVisibleSection = section.id;
@@ -90,7 +90,7 @@ function Project() {
                 section.showInMenu && (
 
                   <li
-                    className={`${activeSection === section.id ? 'bg-lightBlue text-white font-semibold rounded-md' : 'rounded-md text-gray-700'
+                    className={`${activeSection === section.id ? 'bg-lightBlue text-white font-semibold rounded-md' : 'rounded-md text-baseGrey'
                       }`}
                     key={section.id}
                   >
@@ -103,7 +103,7 @@ function Project() {
                           icon={section.icon}
                           className=
                           {`${activeSection === section.id ? 'mr-2 text-white' : 'text-lightBlue mr-2'
-                      }`}
+                            }`}
                         />
                       )}
                       <span>{section.title}</span>
@@ -120,23 +120,25 @@ function Project() {
         <div className="flex-1 p-4 md:p-8">
           <div className="mb-12 flex items-center justify-start">
             <div className="flex items-center w-12 h-12 mb-2 mr-6 rounded-lg">
-            <img
-              src={project.logoUrl}
-              alt="Logo"
-              className="rounded-lg"
-            />
+              <img
+                src={project.logoUrl}
+                alt="Logo"
+                className="rounded-lg"
+              />
             </div>
-            
-            <h1 className="text-lg font-semibold text-center">{project.title}</h1>
+            <span className="text-lg font-semibold text-center">{project.title}</span>
           </div>
           <div className="mb-24">
-            <p className="text-5xl font-semibold text-gray-600 mb-10">{project.slogan}</p>
-            <p className="text-3xl text-gray-600">{project.description}</p>
+            <p className="text-5xl leading-normal font-semibold text-mediumDarkGrey mb-10">{project.slogan}</p>
+            <div className="flex justify-center items-center">
+              <p className="text-3xl text-lightGrey">{project.description}</p>
+
+            </div>
           </div>
           {/* Sections */}
           {project.sections.map((section) => (
-            <div key={section.id} id={section.id} className="mb-16">
-              <h2 className="text-md font-semibold text-gray-400 mb-2">{section.title}</h2>
+            <div key={section.id} id={section.id} className="mb-8">
+              <h2 className=" text-lg md:text-2xl font-semibold uppercase text-darkGrey mb-2">{section.title}</h2>
               <SectionContent section={section} />
             </div>
           ))}
