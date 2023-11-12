@@ -333,7 +333,7 @@ export const projects = [
             expandToFullScreen: true,
             title: 'User Journey Mapping',
             content: `
-             <div class="overflow-auto"><img class="h-full" src="/assets/userJourneyMapSocialLearner.svg" alt="Image of user journey map"></div>
+             <img class="mb-8" src="/assets/userJourneyMapSocialLearner.svg" alt="Image of user journey map">
             `
           },
           {
@@ -343,7 +343,7 @@ export const projects = [
             expandToFullScreen: true,
             title: 'Information Architecture',
             content: `
-             <div class="overflow-auto"><img class="h-full" src="/assets/chatlingoInfoArchitecture.svg" alt="Image of info architecture"></div>
+             <img src="/assets/chatlingoInfoArchitecture.svg" alt="Image of info architecture">
             `
           }
         ],
